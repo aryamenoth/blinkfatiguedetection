@@ -19,92 +19,63 @@ Key Features
 Continuous real-time monitoring
 
 **Implementation Approach**
-The system uses MediaPipe Face Mesh to detect facial landmarks from live video input. Eye landmarks are extracted and Euclidean distance is calculated to determine blink ratios.
-
-Fatigue levels are classified based on predefined blink thresholds. When thresholds are exceeded, the system displays visual alerts and triggers an audio notification.
-
-The implementation was tested iteratively to ensure reliable performance during continuous usage.
+The system uses MediaPipe Face Mesh to detect facial landmarks from live video input. Eye landmarks are extracted and Euclidean distance is calculated to determine blink ratios.Fatigue levels are classified based on predefined blink thresholds. When thresholds are exceeded, the system displays visual alerts and triggers an audio notification.The implementation was tested iteratively to ensure reliable performance during continuous usage.
 
 **Implementation Flow**
 Capture live video using webcam
-
 Detect facial landmarks using MediaPipe
-
 Extract eye landmarks
-
 Calculate blink ratio
-
 Classify fatigue level
-
 Display fatigue status
-
 Trigger alert when threshold is exceeded
 
-Requirements
+**Requirements**
 Functional Requirements
 Real-time webcam input
-
 Facial landmark detection
-
 Blink ratio calculation
-
 Fatigue classification logic
-
 Visual and audio alert system
 
-Non-Functional Requirements
+**Non-Functional Requirements**
 Minimal processing delay
-
 Stable execution
-
 Non-intrusive alerts
-
 Consistent detection accuracy
 
-Tools & Technologies
+**Tools & Technologies**
 Python
-
 OpenCV
-
 MediaPipe
-
 NumPy
-
 Pygame
 
 Installation & Setup
 1. Clone the Repository
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/aryamenoth/blinkfatiguedetection.git
+cd blinkfatiguedetection
 2. Install Dependencies
 pip install -r requirements.txt
 3. Run the Application
 python main.py
 Press ESC to exit the application.
 
-Observations During Testing
+**Observations During Testing**
 Blink ratios remained stable during active usage
-
 Reduced blink frequency observed during fatigue conditions
-
 Alerts triggered consistently after threshold breach
-
 Stable performance maintained during continuous runtime
 
-Challenges
+**Challenges**
 Maintaining detection accuracy in real-time conditions
-
 Adjusting fatigue thresholds to avoid false alerts
-
 Ensuring alerts are noticeable but not disruptive
 
-Future Enhancements
+**Future Enhancements**
 Configurable fatigue thresholds
-
 Fatigue trend dashboard
-
 Desktop/mobile integration
-
 Multi-user support
 
 Project Status
